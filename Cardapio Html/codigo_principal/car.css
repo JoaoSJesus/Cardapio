@@ -1,0 +1,183 @@
+body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(51, 44, 44);
+    background: linear-gradient(to top right, rgb(220, 13, 6), rgb(255, 145, 0), rgb(255, 196, 0));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+}
+
+article {
+    padding:15px;
+    display:inline;
+}
+
+header {
+    text-align:center;
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+    left: 0px;
+    position: fixed;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
+    box-shadow: 0px 0px 20px 7px rgb(255, 115, 0);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li,#rodape ul li {
+    display: inline-flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    color: rgb(224, 115, 13);
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+    
+
+header nav ul li a:link {
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 120%;
+    font-weight: normal;
+}
+
+header nav ul li a:hover {
+    color: rgb(255, 51, 0);
+    text-decoration: underline;
+    background-color: rgba(107, 107, 107, 0.3);
+}
+
+header nav ul li a:active {
+    color: rgb(255, 166, 0);
+    font-weight: bold;
+}
+
+#secao1 {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#secao2 {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#secao3 {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#secao4 {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#secao5 {
+    background-color: rgba(255, 0, 0, 0.5);
+} 
+
+#secao6 {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+
+* {
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 150px;
+}
+
+h1 {
+    color: rgb(224, 115, 13);
+    text-transform: uppercase;
+    height: auto;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-align: center; 
+}
+
+.pratos {
+    margin-left: 15%;
+    border-radius: 5%;
+    height: auto;
+    width: 60%;
+    margin-left: 20%;
+    box-shadow: 0px 0px 20px 7px rgb(0, 0, 0);
+    border-radius: 10%;
+    display: inline-flex;
+    background:linear-gradient(to bottom right,rgb(226, 13, 6), rgb(255, 145, 0), rgb(226, 13, 6));
+}
+
+  
+.pratos img{
+    width: 200px;
+    height: 200px;
+    margin-right: 5%;
+    border-radius: 10% 10% 10% 10%;
+}
+
+.pratos ul {
+    margin-top: -0.5%;
+}
+.pratos h3 {
+    margin-top: 11%;
+    margin-left: 10%;
+    width: 10%;
+    height: 23px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align:center;
+    font-family:'Bauhaus 93';
+    width:100%;
+    border-radius: 10px;
+}
+
+#rodape ul {
+    font-size: 30px;
+    padding: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;;
+}
+
+#rodape a {
+    text-decoration: none;
+    color: rgb(211, 93, 14);
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    flex-direction: flex;
+    display: inline-flex;
+    align-items: center;
+    ;
+}
+
+#rodape a:hover {
+    color: rgb(255, 51, 0);
+    text-decoration: underline;
+    background-color: rgba(107, 107, 107, 0.1);
+}
+
+#rodape a:active {
+    color: rgb(255, 166, 0);
+    font-weight: bold;
+}
