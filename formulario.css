@@ -1,0 +1,132 @@
+        body{
+				font-family:Verdana;
+                background-color:black
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+        h1 {
+            color: rgb(0, 0, 0);
+			margin-left: 5%;
+			margin-right: 10%;
+			text-decoration: underline;
+			text-decoration-color: rgb(0, 0, 0);
+			font-family: Georgia, 'Times New Roman', Times, serif;
+		}
+
+		h1.active {
+			color: rgb(255, 0, 0);
+		}
+
+		h1:hover {
+			color: rgb(255, 123, 0);
+			text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+			text-decoration: underline;
+			text-decoration-color: rgb(201, 1, 1);
+		}
+		
+
+			form{
+				width:80%;
+				margin-left:8%;
+				padding-top:0.5%;
+				padding-bottom:2%;
+				padding-left:3%;
+				padding-right:2%;
+				background: linear-gradient(to top right, rgb(220, 13, 6), rgb(255, 145, 0), rgb(255, 196, 0));
+				box-shadow:0px 0px 20px 5px rgba(226, 106, 7, 0.5);
+			}
+
+			fieldset{
+				padding-left:3%;
+			}
+
+			fieldset legend{
+				font-size:120%;
+				letter-spacing: 5px;
+				color:rgb(0, 0, 0);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+			}
+
+			form h1{
+				text-align:center;
+				margin-top:0%;
+				margin-bottom: 0%;
+                margin-left: 5%;
+                margin-right: 10%;
+				padding:0%;
+				text-shadow:5px 5px 5px rgba(71, 43, 11, 0.8);
+			}
+
+			label{
+				font-size:120%;
+				color:rgb(10,10,10);
+				text-shadow:3px 3px 3px rgba(175, 169, 169, 0.5);
+			}
+
+			label::after{
+				content:"..";
+				opacity:0;
+			}
+
+			.linhas	{
+				display:flex;
+				flex-wrap: wrap; /*empilha na próxima linha o que não cabe na horizontal*/
+			}
+
+			.colunas{
+				width:49%;
+			}
+
+			#txtnome{
+				width:55%;
+			}
+
+			#txtende{
+				width:70%;
+			}
+
+			#txtcida{
+				width:50%;
+			}
+
+			#txtbair, #txtwhats{
+				width:45%;
+			}
+
+			#txtsenha{
+				width:13%;
+			}
+			#txtcep{
+				width:17%;
+			}
+
+			#txtresu{
+				resize:none;
+			}
+
+			.font-menor{
+				font-size:90%;
+			}
+
+			.centro{
+				width:45%;
+				margin-left:25%;
+				margin-top:-1%;
+				display:flex;
+				flex-wrap: wrap;
+                margin-left: 28%;
+			}
+
+			.botao{
+				width:15%;
+				padding:0%;
+				margin-top:-1%;
+				margin-bottom:0%;
+				margin-left:40%;
+				display:flex;
+				flex-wrap: wrap;
+				justify-content:space-between;
+			}

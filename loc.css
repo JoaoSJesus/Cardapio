@@ -32,7 +32,14 @@ header {
     background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
     box-shadow: 0px 0px 20px 7px rgb(255, 115, 0);
 }
-
+.logo {
+    width: 170px;
+    height: 110px;
+    margin-left: 10px;
+    margin-right: 200%;
+    margin-bottom: 100%;
+    margin-top: -10%;
+}
 iframe {
     width: 70%;
     height: 300px;

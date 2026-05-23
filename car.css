@@ -107,6 +107,24 @@ h1 {
     text-align: center; 
 }
 
+.logo {
+    width: 170px;
+    height: 110px;
+    margin-left: 10px;
+    margin-right: 200%;
+    margin-bottom: 100%;
+    margin-top: -10%;
+}
+
+.logo:hover {
+    width: 200px;
+    height: 120px;
+    margin-left: 0px;
+    margin-right: 150%;
+    margin-bottom: 100%;
+    margin-top: -10%;
+    transition: all 0.3s ease-in-out;}
+
 .pratos {
     margin-left: 15%;
     border-radius: 5%;
@@ -144,6 +162,8 @@ footer {
     font-family:'Bauhaus 93';
     width:100%;
     border-radius: 10px;
+    position: relative;
+    z-index: 999;
 }
 
 #rodape ul {
@@ -168,7 +188,6 @@ footer {
     flex-direction: flex;
     display: inline-flex;
     align-items: center;
-    ;
 }
 
 #rodape a:hover {
