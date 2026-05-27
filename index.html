@@ -1,137 +1,212 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cardapio</title>
-        <link rel="stylesheet" href="car.css">
-        
-    </head>
-    <body>
-        <header>
-            <nav>
-                <h1 href="h1">Cabaço´s Bar e Restaurante</h1>
-                <ul class="menu">
-                    <li><a href="#secao1">Prato 1</a></li>
-                    <li>&nbsp;</li>
-                    <li><a href="#secao2">Prato 2</a></li>
-                    <li>&nbsp;</li>
-                    <li><a href="#secao3">Prato 3</a></li>
-                    <li>&nbsp;</li>
-                    <li><a href="#secao4">Prato 4</a></li>
-                    <li>&nbsp;</li>
-                    <li><a href="#secao5">Prato 5</a></li>
-                    <li>&nbsp;</li>
-                    <li><a href="#secao6">Prato 6</a></li>
-                    <li>&nbsp;</li>
-                </ul>
-                <a href="#secao1">
-                <img src="logo.png" alt="Logo do Restaurante" class="logo">
-                </a>
-            </nav>
-        </header>
-    </br></br></br></br></br></br></br></br></br>
-        
-        <section>
-            <section id="secao1"> </section>
-            <section class="pratos">
-                <img src="hamburguer.png" alt="X-Sonho de Noiva">
-                <ul class="lista">
-                    <h2>X-Sonho de Noiva</h2>
-                    <li>Prato importado diretamente do Peru</li>
-                    <li>Pão com gergelim</li>
-                    <li>Hambúrguer 120g</li>
-                    <li>Muita linguiça calabresa com Molho  </li>
-                    <li>Salada</li>
-                    <li>Queijo</li>
-                </ul> 
-                <h3>R$ 25,00</h3>
-            </section>
-            </br> </br> </br>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 href="h1">Cabaço´s Bar e Restaurante</h1>
+            <ul class="menu">
+                <li><a href="#secao1">Prato 1</a></li>
+                <li>&nbsp;</li>
+                <li><a href="#secao2">Prato 2</a></li>
+                <li>&nbsp;</li>
+                <li><a href="#secao3">Prato 3</a></li>
+                <li>&nbsp;</li>
+                <li><a href="#secao4">Prato 4</a></li>
+                <li>&nbsp;</li>
+                <li><a href="#secao5">Prato 5</a></li>
+                <li>&nbsp;</li>
+                <li><a href="#secao6">Prato 6</a></li>
+                <li>&nbsp;</li>
+            </ul>
+        </nav>
+    </header>
 
-            <br>
+    <br><br><br><br><br><br><br><br><br>
 
-            <section id="secao2"> </section>
-            <section class="pratos">
-                <img src="peixe.png" alt="X-Bacalhau de Ex">
-                <ul class="lista"> <h2>X-Bacalhau de Ex</h2>
-                    <li>Diretamente da Republica Tcheca</li>
-                    <li>Pão Artesanal</li>
-                    <li>Filé de Bacalhau</li>
-                    <li>Salada</li>
-                    <li>Molho Especial</li>
-                </ul>
-                <h3>R$ 30,00</h3>
-            </section>
-        </section>
-    </br></br></br>
+    <section id="secao1" class="pratos">
+    <img src="hamburguer.png" alt="X-Calabresa">
+    <ul class="lista">
+        <h2>X-Calabresa</h2>
+        <li>Pão com gergelim</li>
+        <li>Hambúrguer 120g</li>
+        <li>Muita linguiça calabresa</li>
+    </ul> 
+    <div class="compra-container">
+        <h3>R$ 25,00</h3>
+        <button class="btn-adicionar" onclick="adicionarAoCarrinho('X-Calabresa', 25.00)">
+            <i class="carrinho"></i> Adicionar
+        </button>
+    </div>
+</section>
+    <br><br>
 
-        <section id="secao3"> </section>
-        <section class="pratos">
-                <img src="banana.png" alt="Batida de Banana">
-                <ul class="lista"> <h2>Batida de Banana</h2>
-                    <li>Feito com bastante dedicação</li>
-                    <li>Com Banana Madura</li>
-                    <li>Com Leite Fresco</li>
-                </ul>
-                <h3>R$ 15,00</h3>
-            </section>
-        </section>
-        </br></br></br>
+    <section id="secao2" class="pratos">
+    <img src="peixe.png" alt="X-Bacalhau">
+    <ul class="lista"> 
+        <h2>X-Bacalhau</h2>
+        <li>Pão Artesanal</li>
+        <li>Filé de Bacalhau</li>
+        <li>Salada</li>
+        <li>Molho Especial</li>
+    </ul>
+    <div class="compra-container">
+        <h3>R$ 35,00</h3>
+        <button class="btn-adicionar" onclick="adicionarAoCarrinho('X-Bacalhau', 35.00)">
+            <i class="carrinho"></i> Adicionar
+        </button>
+    </div>
+</section>
+    <br><br>
 
-        <section id="secao4"> </section> 
-        <section class="pratos">
-                <img src="diddy.png" alt="Frango do Diddy">
-                <ul class="lista"> <h2>Franguinho do Diddy</h2>
-                    <li>Para fãs de Justin Bieber</li>
-                    <li>Assado a base de óleo</li>
-                    <li>Serve 4 pessoas</li>
-                    <li>Molho de Jontex</li>
-                </ul>
-                <h3>R$ 115,00</h3>
-            </section>
-        </section>
-        </br></br></br>
+    <section id="secao3" class="pratos">
+    <img src="banana.png" alt="Batida de Banana">
+    <ul class="lista"> 
+        <h2>Batida de Banana</h2>
+        <li>Banana</li>
+        <li>Leite</li>
+        <li>Açúcar Macavo</li>
+    </ul>
+    <div class="compra-container">
+        <h3>R$ 15,00</h3>
+        <button class="btn-adicionar" onclick="adicionarAoCarrinho('Batida de Banana', 15.00)">
+            <i class="carrinho"></i> Adicionar
+        </button>
+    </div>
+</section>
+    <br><br>
 
-        <section id="secao5"> </section>
-        <section class="pratos">
-                <img src="coxinha.png" alt="Coxinha de Orangotango">
-                <ul class="lista"> <h2>Coxinha de Orangotango</h2>
-                    <li>Diretamente da Ilha de Madagascar</li>
-                    <li>Carne de Orangotango</li>
-                    <li>Massa a base tinta de polvo</li>
-                    <li>Empanado na terra</li>
-                </ul>
+    <section id="secao4" class="pratos">
+    <img src="diddy.png" alt="Frango Assado">
+    <ul class="lista"> 
+        <h2>Frango Assado</h2>
+        <li>Marinado por 4 dias</li>
+        <li>Assado a base de óleo</li>
+        <li>Serve 4 pessoas</li>
+        <li>Molho de Tomate</li>
+    </ul>
+    <div class="compra-container">
+        <h3>R$ 115,00</h3>
+        <button class="btn-adicionar" onclick="adicionarAoCarrinho('Frango Assado', 115.00)">
+            <i class="carrinho"></i> Adicionar
+        </button>
+    </div>
+</section>
+    <br><br>
+
+    <section id="secao5" class="pratos">
+        <img src="coxinha.png" alt="Coxinha de Orangotango">
+        <ul class="lista"> 
+            <h2>Coxinha de Orangotango</h2>
+            <li>Carne de Orangotango</li>
+            <li>Molho de Tomate</li>
+            <li>Empanado na Farinha de Rosca</li>
+        </ul>
+        <div class="compra-container">
                 <h3>R$ 10,00</h3>
-            </section>
+                <button class="btn-adicionar" onclick="adicionarAoCarrinho('Coxinha de Orangotango', 10.00)">
+                    <i class="carrinho"></i> Adicionar
+                </button>
+            </div>
         </section>
-    </br></br></br>
+    </section>
+    <br><br>
 
-        <section id="secao6"> </section>
-        <section class="pratos">
-                <img src="carnica.png" alt="X-Carniça">
-                <ul class="lista"> <h2>X-Carniça</h2>
-                    <li>Diretamente do Chipre</li>
-                    <li>Carne de Urubu</li>
-                    <li>Pão com Gergelim colhido no extremo da Africa</li>
-                    <li>Nem Cachorro come</li>
-                </ul>
-                <h3>R$ 60,00</h3>
-            </section>
-        </section>
-    </br></br></br>
-        <footer>
-            <nav id="rodape">
-                <ul>
-                    <li><a href="#secao1">Voltar ao Inicio</a></li>
-                    <li>&nbsp;</li>
-                    <li><a href="loc2.html">Localização</a></li>
-                    <li>&nbsp;</li>
-                    <li><a href="nos.html">Sobre Nós</a></li>
-                    <li>&nbsp;</li>
-                    <li><a href="formulario.html">Formulário</a></li>
-                </ul>
-            </nav>
-        </footer>
+    <section id="secao6" class="pratos">
+    <img src="carnica.png" alt="X-Black">
+    <ul class="lista"> 
+        <h2>X-Black</h2>
+        <li>Diretamente do Chipre</li>
+        <li>Carne Mal Passada</li>
+        <li>Pão com Gergelim</li>
+    </ul>
+    <div class="compra-container">
+        <h3>R$ 20,00</h3>
+        <button class="btn-adicionar" onclick="adicionarAoCarrinho('X-Black', 20.00)">
+            <i class="carrinho"></i> Adicionar
+        </button>
+    </div>
+</section>
 
-    </body>
+     <div id="resumo-carrinho">
+        <h3>🛒 Seu Pedido</h3>
+        <ul id="lista-itens">
+            </ul>
+        <p><strong>Total: R$ <span id="valor-total">0.00</span></strong></p>
+        
+        <button class="btn-enviar" onclick="enviarPedido()">
+            <i class="fab fa-whatsapp"></i> Finalizar no WhatsApp
+        </button>
+
+        <button class="btn-limpar" onclick="limparCarrinho()">
+            Limpar Carrinho
+        </button>
+    </div>
+
+    <footer>
+        <nav id="rodape">
+            <ul>
+                <li><a href="#secao1">Voltar ao Inicio</a></li>
+                <li>&nbsp;</li>
+                <li><a href="loc2.html">Localização</a></li>
+                <li>&nbsp;</li>
+                <li><a href="nos.html">Sobre Nós</a></li>
+                <li>&nbsp;</li>
+                <li><a href="formulario.html">Formulário</a></li>
+            </ul>
+        </nav> 
+    </footer>
+        <script>
+        let itensCarrinho = [];
+        let valorTotal = 0;
+
+        function adicionarAoCarrinho(nome, preco) {
+            itensCarrinho.push({ nome, preco });
+            valorTotal += preco;
+            renderizarCarrinho();
+        }
+
+        function renderizarCarrinho() {
+            const lista = document.getElementById('lista-itens');
+            const totalSpan = document.getElementById('valor-total');
+            
+            lista.innerHTML = '';
+            itensCarrinho.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = `<span>${item.nome}</span> <span>R$ ${item.preco.toFixed(2)}</span>`;
+                lista.appendChild(li);
+            });
+            
+            totalSpan.textContent = valorTotal.toFixed(2);
+        }
+
+        function limparCarrinho() {
+            itensCarrinho = [];
+            valorTotal = 0;
+            renderizarCarrinho();
+        }
+
+        function enviarPedido() {
+            if (itensCarrinho.length === 0) {
+                alert("O carrinho está vazio!");
+                return;
+            }
+
+            let msg = "🍔 *Novo Pedido - Cabaço´s Bar*\n\n";
+            itensCarrinho.forEach(item => {
+                msg += `• ${item.nome}: R$ ${item.preco.toFixed(2)}\n`;
+            });
+            msg += `\n*Total: R$ ${valorTotal.toFixed(2)}*`;
+
+            const numero = "5511915009393";
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
