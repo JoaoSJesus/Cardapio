@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav>
-            <h1 href="h1">Cabaço´s Bar e Restaurante</h1>
+            <li><a href="#secao1"><h1>Cabaço´s Bar e Restaurante</h1></a>
             <ul class="menu">
                 <li><a href="#secao1">Prato 1</a></li>
                 <li>&nbsp;</li>
@@ -39,12 +39,13 @@
     </ul> 
     <div class="compra-container">
         <h3>R$ 25,00</h3>
-        <button class="btn-adicionar" onclick="adicionarAoCarrinho('X-Calabresa', 25.00)">
+        <button class="btn-adicionar" onclick="adicionarAoCarrinho
+        ('X-Calabresa', 25.00)">
             <i class="carrinho"></i> Adicionar
         </button>
     </div>
 </section>
-    <br><br>
+    </br></br>
 
     <section id="secao2" class="pratos">
     <img src="peixe.png" alt="X-Bacalhau">
@@ -62,7 +63,7 @@
         </button>
     </div>
 </section>
-    <br><br>
+    </br></br>
 
     <section id="secao3" class="pratos">
     <img src="banana.png" alt="Batida de Banana">
@@ -79,7 +80,7 @@
         </button>
     </div>
 </section>
-    <br><br>
+    </br></br>
 
     <section id="secao4" class="pratos">
     <img src="diddy.png" alt="Frango Assado">
@@ -97,7 +98,7 @@
         </button>
     </div>
 </section>
-    <br><br>
+        </br></br>
 
     <section id="secao5" class="pratos">
         <img src="coxinha.png" alt="Coxinha de Orangotango">
@@ -115,7 +116,7 @@
             </div>
         </section>
     </section>
-    <br><br>
+    </br></br>
 
     <section id="secao6" class="pratos">
     <img src="carnica.png" alt="X-Black">
@@ -156,8 +157,6 @@
                 <li><a href="loc2.html">Localização</a></li>
                 <li>&nbsp;</li>
                 <li><a href="nos.html">Sobre Nós</a></li>
-                <li>&nbsp;</li>
-                <li><a href="formulario.html">Formulário</a></li>
             </ul>
         </nav> 
     </footer>
@@ -169,6 +168,11 @@
             itensCarrinho.push({ nome, preco });
             valorTotal += preco;
             renderizarCarrinho();
+
+            if (itensCarrinho.length === 1) {
+                alert("Voce adicionou o produto ao carrinho!");
+                return;
+            }
         }
 
         function renderizarCarrinho() {
